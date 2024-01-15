@@ -19,7 +19,7 @@ public class Main {
         player1.showHand();
         player2.showHand();
 
-        player1.exchangeCard(1);
+        
 
         Game game = new Game(deck,player1);
 

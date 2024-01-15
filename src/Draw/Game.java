@@ -23,7 +23,7 @@ public class Game {
         String line = scanner.nextLine();
         //交換が必要な場合
         if(line.equals("はい")){
-            System.out.println("どのカードを入れ替えるか入力してください（数字の間に『,』 を入力）");
+            System.out.println("どのカードを入れ替えるか入力してください。左から1,2,3,,,（数字の間に『,』 を入力）");
             String[] nums = scanner.nextLine().split(",");
             for(String num : nums){
                 //持っている手札（交換したい）
