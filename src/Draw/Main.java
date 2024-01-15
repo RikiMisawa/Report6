@@ -8,5 +8,12 @@ public class Main {
             System.out.println(card);
         }
 
+        Player player1 = new Player("Player1");
+
+        player1.drawCard(deck,5);
+
+        player1.showHand();
     }
+
+    
 }
