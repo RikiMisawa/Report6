@@ -6,11 +6,11 @@ import java.util.List;
 
 public class Deck {
     //ジョーカーを除いた52枚のトランプ
-    List<String>  card_list;
+    List<Card>  cardList;
 
     //デッキを作成してシャッフルしたい
     public Deck(){
-        card_list = new ArrayList<>();
+        cardList = new ArrayList<>();
         initializedDeck();
         shuffle();
 
@@ -23,18 +23,19 @@ public class Deck {
         
         for(String suit : suits){
             for(String num : number){
-                card_list.add(suit + num);
+                Card card = new Card(suit,num);
+                cardList.add(card);
             }
         }
     }
 
     //作成したデッキをシャッフルする
     public void shuffle(){
-        Collections.shuffle(card_list);
+        Collections.shuffle(cardList);
     }
     //getter
-    public List<String> getCards(){
-        return card_list;
+    public List<Card> getCards(){
+        return cardList;
     }
 
 }

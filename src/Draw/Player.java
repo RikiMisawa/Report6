@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Player {
     //フィールド
     String name;
-    List<String> hand;
+    List<Card> hand;
 
     //プレイヤーは名前だけを保存
     Player(String name){
@@ -25,4 +25,17 @@ public class Player {
     public void showHand(){
         System.out.println(name + "のハンドは" + hand);
     }
+
+    //getter
+    public String getName(){
+        return name;
+    }
+
+    public List<Card> getHand(){
+        return hand;
+    }
+
+    public void exchangeCard(int i) {
+    }
+
 }
