@@ -27,8 +27,13 @@ public class Rule {
     }
     
     //役の判定メソッド
+    /* 
     private boolean isFourCard(){
-
+        int count = 0;
+        for(int i=0; i<5; i++){
+            if(hand[i] )
+        }
     }
+    */
     
 }

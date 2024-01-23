@@ -31,13 +31,15 @@ public class Game {
 
                 Card exCard = player.getHand().remove(index);
                 player.getHand().add(deck.getCards().remove(0));//新しいカードを取得
-                System.out.println(exCard + "を交換しました");   
+                System.out.println(exCard + "を交換しました");
+                System.out.println("あなたの新しい手札は");
+                player.showHand();
             }
             
+        }else{
+            System.out.println("手札は変更されていません");
+            player.showHand();
         }
-
-        System.out.println("あなたの新しい手札は");
-        player.showHand();
 
     }   
 
